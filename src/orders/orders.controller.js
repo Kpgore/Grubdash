@@ -74,7 +74,7 @@ function orderExist(req, res, next) {
 function update(req, res) {
   const { data: { deliverTo, mobileNumber, dishes, status } = {} } = req.body;
   res.locals.order = {
-   id: res.locals.order.id,
+   id: id,
     deliverTo: deliverTo,
 		mobileNumber: mobileNumber,
 		dishes: dishes,

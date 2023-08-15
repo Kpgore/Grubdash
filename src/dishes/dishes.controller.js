@@ -65,7 +65,7 @@ function dishExist(req, res, next) {
 function update(req, res) {
   const { data: { name, description, price, image_url } = {} } = req.body;
   res.locals.dish = {
-    id: res.locals.dishId,
+    id: id,
     name: name,
     description: description,
     price: price,
